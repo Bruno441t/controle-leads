@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Controle de Leads</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Controle de Leads</h1>
+
+    <div id="alerta" class="alerta"></div>
+
+    <form id="leadForm">
+      <input type="text" id="nome" placeholder="Nome" required />
+      <input type="tel" id="telefone" placeholder="Telefone" required />
+      <input type="email" id="email" placeholder="E-mail" required />
+
+      <select id="tipo" required>
+        <option value="">O que deseja?</option>
+        <option value="Imóvel">Imóvel</option>
+        <option value="Carro">Carro</option>
+        <option value="Moto">Moto</option>
+      </select>
+
+      <button type="submit">Adicionar Lead</button>
+    </form>
+
+    <button id="exportarBtn">📤 Exportar para Excel</button>
+
+    <ul id="leadList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
